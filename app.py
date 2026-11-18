@@ -13,3 +13,7 @@ name = st.text_area("Student Name", placeholder="Enter your name")
 roll = st.text_area("USN / Roll no.", placeholder="Enter your USN")
 
 department = st.text_area("Department", placeholder="Enter your department")
+year = st.radio(
+    "Current Year",
+    ["1st Year", "2nd Year", "3rd Year", "4th Year"]
+)
