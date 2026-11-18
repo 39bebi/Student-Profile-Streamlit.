@@ -8,3 +8,8 @@ try:
 except (KeyError, FileNotFound):
   st.error("API Key is missing. Add it in Advanced settings")
   st.stop()
+name = st.text_area("Student Name", placeholder="Enter your name")
+
+roll = st.text_area("USN / Roll no.", placeholder="Enter your USN")
+
+department = st.text_area("Department", placeholder="Enter your department")
