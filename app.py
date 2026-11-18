@@ -17,3 +17,18 @@ year = st.radio(
     "Current Year",
     ["1st Year", "2nd Year", "3rd Year", "4th Year"]
 )
+if st.button("View My Profile"):
+
+    if name and roll and department:
+
+        st.success("Profile Created Successfully!")
+
+        st.subheader("🎓 Student Profile Details")
+
+        st.write("*Student Name:*", name)
+        st.write("*USN / Roll No.:*", roll)
+        st.write("*Department:*", department)
+        st.write("*Current Year:*", year)
+
+    else:
+        st.warning("Please fill all the details!")
